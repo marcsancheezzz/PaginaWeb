@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.barra-capcalera {
+    background: #212121;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 18px;
+}
+
+nav {
+    background: #333;
+    color: white;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li {
+    cursor: pointer;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+.banner-principal {
+    position: relative;
+    height: 400px;
+    background: url('Leonardo_Phoenix_A_detailed_and_realistic_illustration_of_a_we_1.jpg') center/cover no-repeat;
+    opacity: 0.9;
+}
+
+.banner-principal h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+    text-shadow: 3px 3px 6px black;
+    text-align: center;
+}
+
+.galeria {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+    background: #ececec;
+}
+
+.galeria img {
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.085);
+}
+
+.contenidor-informacio {
+    display: flex;
+    gap: 20px;
+    padding: 40px;
+    background: #f9f9f9;
+}
+
+.contingut-principal {
+    flex: 2;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+aside {
+    flex: 1;
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.seccio-preus {
+    padding: 40px;
+    text-align: center;
+}
+
+.targeta-preu {
+    display: inline-block;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 30%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.targeta-preu:hover {
+    transform: scale(1.05);
+}
+
+.targeta-preu h3 {
+    margin-bottom: 15px;
+}
+
+.targeta-preu p {
+    margin-bottom: 10px;
+}
+
+footer {
+    background: #212121;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+.theme-button {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.theme-button:hover {
+    background: #444;
+}
+
+.enllaços-exemple {
+    text-align: center;
+    padding: 20px;
+    background: #fefefe;
+}
+
+.enllaços-exemple a {
+    display: inline-block;
+    margin: 10px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.enllaços-exemple a:hover {
+    background: #333;
+    color: white;
+}
+
+.missatge {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+}

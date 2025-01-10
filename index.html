@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <script src="java.java"></script>
+    <title>Pàgina Web Interactiva</title>
+</head>
+<body>
+    <div class="barra-capcalera">
+        Benvingut a la nostra pàgina!
+    </div>
+    <button class="theme-button" onclick="canviarTema()">Canviar Tema</button>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="navegar('Inici')">Inici</a></li>
+            <li><a href="#" onclick="navegar('Exemples')">Exemples</a></li>
+            <li><a href="#preus" onclick="navegar('Preus')">Preus</a></li>
+            <li><a href="#" onclick="navegar('Contacte')">Contacte</a></li>
+        </ul>
+    </nav>
+    <div class="banner-principal">
+        <h1>CREEM LA TEVA PÀGINA WEB</h1>
+    </div>
+    <div class="galeria">
+        <img src="Leonardo_Phoenix_Create_a_visually_stunning_digital_art_piece_0.jpg" alt="Disseny web 1" onclick="mostrarMissatge('Disseny 1')">
+        <img src="Leonardo_Phoenix_Depict_a_scenic_image_of_a_web_page_creation_3.jpg" alt="Disseny web 2" onclick="mostrarMissatge('Disseny 2')">
+        <img src="Leonardo_Phoenix_Create_a_web_page_design_featuring_a_prominen_0.jpg" alt="Disseny web 3" onclick="mostrarMissatge('Disseny 3')">
+    </div>
+    <div class="contenidor-informacio">
+        <div class="contingut-principal">
+            <h2>Els nostres serveis</h2>
+            <div class="serveis">
+                <div class="servei">
+                    <h3>Dissenys Personalitzats</h3>
+                    <p>Creem pàgines web úniques que s'adapten a les teves necessitats específiques.</p>
+                </div>
+                <div class="servei">
+                    <h3>Optimització</h3>
+                    <p>Garantim que la teva pàgina sigui ràpida, segura i optimitzada per als motors de cerca.</p>
+                </div>
+                <div class="servei">
+                    <h3>Assistència Continuada</h3>
+                    <p>Tindràs suport tècnic per assegurar que el teu lloc web sempre estigui operatiu.</p>
+                </div>
+            </div>
+        </div>
+        <aside>
+            <h2>Més detalls</h2>
+            <div class="detalls">
+                <p><strong>✔ Flexibilitat:</strong> Escull el tipus de pàgina que millor s'ajusti a la teva empresa o projecte personal.</p>
+                <p><strong>✔ Comunicació constant:</strong> Estaràs sempre al corrent del procés de creació.</p>
+                <p><strong>✔ Resultats assegurats:</strong> Ens comprometem a oferir-te un producte que superi les teves expectatives.</p>
+            </div>
+        </aside>
+    </div>
+    <div class="seccio-preus" id="preus">
+        <h2>Els nostres paquets</h2>
+        <div class="targeta-preu" onclick="mostrarPreu('Bàsic')">
+            <h3>Paquet Bàsic</h3>
+            <p>Ideal per projectes petits i senzills.</p>
+            <p><strong>Preu: 500€</strong></p>
+        </div>
+        <div class="targeta-preu" onclick="mostrarPreu('Avançat')">
+            <h3>Paquet Avançat</h3>
+            <p>Perfecte per webs amb més funcionalitats.</p>
+            <p><strong>Preu: 900€</strong></p>
+        </div>
+        <div class="targeta-preu" onclick="mostrarPreu('Premium')">
+            <h3>Paquet premium</h3>
+            <p>Tot el que necessites per un lloc web únic.</p>
+            <p><strong>Preu: 1500€</strong></p>
+        </div>
+        <div id="preu-dinamico"></div>
+    </div>
+    <div class="enllaços-exemple">
+        <h2>Exemples de les nostres pàgines</h2>
+        <a href="https://www.razer.com/es-es/" target="_blank">Exemple 1</a>
+        <a href="https://www.pccomponentes.com" target="_blank">Exemple 2</a>
+        <a href="https://www.youtube.com/" target="_blank">Exemple 3</a>
+    </div>
+    <footer>
+        © 2024 Pàgina Web 
+    </footer>
+    <script>
+    </script>
+</body>
+</html>
